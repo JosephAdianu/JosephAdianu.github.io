@@ -601,7 +601,16 @@ ol {
 	font-size: 15px;
 	color: #fff;
 }
-
+.top-right{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 5px 5px;
+}
+.top-right:hover{
+	color:whitesmoke;
+	opacity: 1;
+}
 .recipe .rating i {
 	font-size: 11px;
 }
