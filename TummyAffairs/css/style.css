@@ -80,6 +80,10 @@ ol {
 	padding: 0;
 	margin: 0;
 }
+.icon-list-text{
+	font-size: 14px;
+	padding-left: 10px;
+}
 
 /*---------------------
 	Helper CSS
