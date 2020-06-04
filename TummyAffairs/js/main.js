@@ -118,4 +118,6 @@ $(window).on('load', function() {
 
 
 })(jQuery);
-
+$(document) .ready(function(){
+	$('#myModal').modal('show');
+	});
