@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Auto Loading Bootstrap Modal on Page Load</title>
+<link rel="stylesheet" href="popup/popup.css">
+</head>
+<body>
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Subscribe our Newsletter</h4>
+            </div>
+            <div class="modal-body">
+				<p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
+                <form action="https://formspree.io/mzbjrzer" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email Address">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="popup/jquery-popup.js"></script>
+<script src="popup/popup.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+<script language="JavaScript">
+
+    var frmvalidator = new Validator("contactform"); frmvalidator.addValidation("name","req","Please provide your name"); frmvalidator.addValidation("email","req","Please provide your email"); frmvalidator.addValidation("email","email", "Please enter a valid email address"); 
+</script>
+</body>
+</html>

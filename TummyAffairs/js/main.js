@@ -1,7 +1,6 @@
 /* =================================
 ------------------------------------
-	Food Blog - Web Template
-	Version: 1.0
+	Edited by Adianu Hub
  ------------------------------------ 
  ====================================*/
 
@@ -24,6 +23,16 @@ $(window).on('load', function() {
 		var item_w = $(this).width();
 		$(this).height(item_w);
 	});
+
+	function popup(hideOrshow) {
+		if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
+		else document.getElementById('ac-wrapper').removeAttribute('style')
+	}
+	window.onload = function () {
+		setTimeout(function() {
+			popup('show')
+		}, 1000);
+	}
 
 });
 
@@ -118,6 +127,4 @@ $(window).on('load', function() {
 
 
 })(jQuery);
-$(document) .ready(function(){
-	$('#myModal').modal('show');
-	});
+
