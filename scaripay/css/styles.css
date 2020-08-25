@@ -9,13 +9,12 @@ a {
         -webkit-transition: 0.5s;
         transition: 0.5s;}
 header{margin: 0; padding: 0;}
-section{margin: 0; padding: 0;} div{margin: 0;}
+section{padding-top: 18px; padding-bottom: 18px;}
 .cont{
     margin: 0 auto;
     max-width: 1310px;
     padding: 0 20px;
-    width: 100%;
-}
+    width: 100%;}
 h1{
     /* font-family: 'centurygothicbold', 'U8', sans-serif; */
     font-family: 'U8-Bold', sans-serif;
@@ -23,7 +22,7 @@ h1{
 .stores{display: flex; justify-content: space-evenly;}
 .header-top{background-color: rgb(9, 5, 139);background-size: cover; color: white; padding: 8px 0px;}
 .top-sub-btn{border: 1px solid rgb(220, 92, 6);color: rgb(220, 92, 6);border-radius: 5px;
-    padding: 15px 30px;box-sizing: border-box;}
+    padding: 8px 15px !important;}
 .top-sub-btn:hover{background-color: rgb(220, 92, 6); color: white;}
 .blue-txt{color: #083E9E !important;}
 .orange-txt{color: rgb(220, 92, 6) !important;}
@@ -32,3 +31,39 @@ h1{
 .ready-card{background-image: url(../img/ready-card.png); background-position: center; background-size: cover; border-radius: 5px; margin: 50px auto; padding: 20px 10px;}
 .footer_part{background-image: url(../img/footer-img.png); background-position: center; background-size: cover;}
 .footer-content{padding: 30px 20px;}
+#pedroville-counter {position: relative; clear: both; margin-bottom: 5em; }
+.pedroville-counters {padding: 3em 0;background-size: cover;background-attachment: fixed;background-position: center center; }
+.pedroville-narrow-content {
+    padding: 0 2.5em; }
+    @media screen and (max-width: 768px) {
+      .pedroville-narrow-content {
+        padding: 0; } }
+.pedroville-counter-label {
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 5px;
+            margin-bottom: 2em;
+            display: block; }
+            .pedroville-counter {
+                font-size: 40px;
+                display: block;
+                color: white;
+                font-family: "Quicksand", Arial, sans-serif;
+                width: 100%;
+                font-weight: 700;
+                margin-bottom: .3em; }
+                .overlay {
+                    z-index: 0;
+                    position: absolute;
+                    bottom: 0;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.4); }
+                    .top-left{
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        padding: 0px;
+                    }

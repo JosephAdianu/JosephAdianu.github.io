@@ -33,18 +33,34 @@
                             <li class="nav-item"><a class="nav-link" href="#"><strong>About</strong></a></li>
                             <li class="nav-item"><a class="nav-link" href="#"><strong>FAQ</strong></a></li>
                             <li class="nav-item"><a class="nav-link" href="#"><strong>Blog</strong></a></li>
-                            <li class="nav-item"><a  href="#" class="btn btn-custom top-sub-btn nav-link"><strong>Subscribe</strong></a></li>
+                            <li class="nav-item"><button id="sub-btn" class="btn btn-custom top-sub-btn nav-link"><strong>Subscribe</strong></button></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
-        
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close">&times;</button>
+                    <h4 class="modal-title">Subscribe our Newsletter</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
+                    <form action="https://formspree.io/mzbjrzer" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email Address">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <section class="container">
             <div class="row">
-                <div class="col-xs-12 grid col-sm-6 col-no-gutter animated bounceInLeft" style="padding: 10% 0%;">
+                <div class="col-xs-12 grid col-sm-6 col-no-gutter wow bounceInLeft" style="padding: 10% 0%;">
                     <h1 class="blue-txt"><strong>MAKE SEAMLESS <br>PAYMENTS</strong></h1>
                     <p class="h6">ScariPay is here to make digital payments fast and easy just for YOU.
                     <br>Make Payments on the go; from anywhere in Africa.
@@ -58,59 +74,70 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 grid col-sm-6 col-no-gutter animated bounceInRight">
-                    <img src="img/intro.png" style="max-width: 90%; height: auto;">
+                <div class="col-xs-12 grid col-sm-6 col-no-gutter wow bounceInRight">
+                    <img src="img/intro2.png" style="max-width: 90%; height: auto;">
                 </div>
             </div>
         </section>
         <section class="bg-light">
-            <div class="row">
-            <img src="img/security-login-400-min.png" class="col-md-6">
-            <div class="col-md-6">
-                <h1 class="h1 text-center">YOUR SECURITY IS ASSURED</h1>
-                <p class="text-center">All payments made are secured and instant.</p>
-            </div>
+            <div class="row justify-content-center">
+                <img src="img/security-login-400-min.png" style="max-width: 10%; height: auto;" class="col-md-6">
+                <div class="col-md-6">
+                    <h1 class="h1 text-center">YOUR SECURITY IS ASSURED</h1>
+                    <p class="text-center">All payments made are secured and instant.</p>
+                </div>
             </div>
         </section>
         <section>
-            
+            <div id="pedroville-counter" class="pedroville-counters" style="background-image: url(img/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+				<div class="overlay"></div>
+				<div class="pedroville-narrow-content">
+					<div class="row">
+					</div>
+					<div class="row wow">
+						<div class="col-md-12 text-center animate-box">
+                            <h3 class="h2 white-txt top-left">Get ready to make more than</h3><br>
+                            <h2 class=" h1 white-txt text-center"><strong>100,000</strong>+</h2>
+							<span class="pedroville-counter-label float-right h4 white-txt"> transactions accross Africa.</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
         </section>
         <section class="container">
             <div class="row justify-content-between">
-                <div class="col-md-4 col-xs-12 col-sm-6 animated bounceInLeft text-center shadow-lg py-5 card">
+                <div class="col-md-4 col-xs-12 col-sm-6 wow fadeInLeft text-center shadow-lg py-5 card" data-wow-delay="900">
                     <h1 class="h3 orange-txt">About US</h1>
                     <p>WE ARE SCARITEL. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem eum quibusdam minima suscipit hic! Earum eveniet deleniti sint dignissimos reprehenderit natus ducimus laudantium, porro ratione quis voluptatibus, laborum quae.</p>
                 </div>
-                <div class="col-md-4  col-xs-12 col-sm-6 animated bounceInUp text-center shadow-lg py-5 card">
+                <div class="col-md-4  col-xs-12 col-sm-6 wow fadeInUp text-center shadow-lg py-5 card" data-wow-delay="900">
                     <h1 class="h3 blue-txt">Our Services</h1>
                     <p>WE ARE SCARITEL. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem eum quibusdam minima suscipit hic! Earum eveniet deleniti sint dignissimos reprehenderit natus ducimus laudantium, porro ratione quis voluptatibus, laborum quae.</p>
                 </div>
-                <div class="col-md-4  col-xs-12 col-sm-6 animated bounceInRight text-center shadow-lg py-5 card">
+                <div class="col-md-4  col-xs-12 col-sm-6 wow fadeInRight text-center shadow-lg py-5 card" data-wow-delay="900">
                     <h1 class="h3 orange-txt">Financial Inclusion</h1>
                     <p>WE ARE SCARITEL. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem eum quibusdam minima suscipit hic! Earum eveniet deleniti sint dignissimos reprehenderit natus ducimus laudantium, porro ratione quis voluptatibus, laborum quae.</p>
                 </div>
             </div>
         </section>
         <section class="container">
-            <div class="grid">
-                <div class="col-xs-12 grid col-sm-6 col-no-gutter">
-                    <img>
+            <div class="row justify-content-center">
+                <div class="col-xs-12 grid col-sm-6 col-no-gutter text-center wow bounceInLeft" data-wow-delay="500">
+                    <img src="img/phone.png" style="max-width: 30%; height: auto;">
                 </div>
-                <div class="col-xs-12 grid col-sm-6 col-no-gutter">
+                <div class="col-xs-12 grid col-sm-6 col-no-gutter wow bounceInRight" data-wow-delay="500">
                     <h1 class="h1 orange-txt">GET INSTANT VALUE <br>ON TRANSACTIONS</h1>
                     <p>Send and recieve money directly to your wallet; make digital payments from & to anywhere in <strong>AFRICA</strong>.</p>
                 </div>
             </div>
         </section>
         <section class="container text-center">
-            <h1 class="animated fadeInLeft">PAY YOUR BILLS WITH EASE</h1>
-            <p class="animated fadeInRight">(TV subscriptions, Electriciry bills, Airtime, etc.)</p>
+            <h1 class="wow fadeInLeft" data-wow-delay="500">PAY YOUR BILLS WITH EASE</h1>
+            <p class="wow fadeInRight" data-wow-delay="500">(TV subscriptions, Electriciry bills, Airtime, etc.)</p>
         </section>
-        <section>
-            
-        </section>
-        <section class="container ready-card">
-            <div class="row">
+        <section class="container ready-card wow pulse" data-wow-duration="1500ms">
+            <div class="row" >
                 <div class="col-6">
                     <h3 class="h4 white-txt">GET READY FOR</h3>
                     <h1 class="h1 orange-txt">SCARIPAY</h1>
@@ -186,7 +213,43 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
     <!--====== Javascripts & Jquery ======-->
     <script src="js/jquerymin.js"></script>
+    <script src="js/wow.js"></script>
     <script src="js/fontawesome.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset:       100,
+            callback:     function(box) {
+            console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }
+        );
+        wow.init();
+        document.getElementById('moar').onclick = function() {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+        };
+    </script>
+    <script>
+        var modal = document.getElementById("myModal");
+        var sub = document.getElementsById("sub-btn");
+        var span = document.getElementsByClassName("close")[0];
+
+        sub.onclick = function(){
+            modal.style.display = "block";
+        }
+        span.onclick = function(){
+            modal.style.display = "none";
+        }
+        window.onclick = function(event){
+            if (event.target == modal){
+                modal.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
