@@ -33,26 +33,43 @@
                             <li class="nav-item"><a class="nav-link" href="#"><strong>About</strong></a></li>
                             <li class="nav-item"><a class="nav-link" href="#"><strong>FAQ</strong></a></li>
                             <li class="nav-item"><a class="nav-link" href="#"><strong>Blog</strong></a></li>
-                            <li class="nav-item"><button id="sub-btn" class="btn btn-custom top-sub-btn nav-link"><strong>Subscribe</strong></button></li>
+                            <li class="nav-item"><button type="button" id="sub-btn" class="btn btn-custom top-sub-btn nav-link" data-toggle="modal" data-target="#exampleModal"><strong>Subscribe</strong></button></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
                 <div class="modal-header">
-                    <button class="close">&times;</button>
-                    <h4 class="modal-title">Subscribe our Newsletter</h4>
+                  <h5 class="modal-title" id="exampleModalLabel">Subscribe our Newsletter</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
                 <div class="modal-body">
-                    <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-                    <form action="https://formspree.io/mzbjrzer" method="POST">
+                    Subscribe to our mailing list to get the latest updates straight in your inbox.
+                    <form action="mailto:josephadianu@gmail.com" method="POST">
                         <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
                             <input type="text" class="form-control" placeholder="Email Address">
                         </div>
                         <button type="submit" class="btn btn-primary">Subscribe</button>
                     </form>
+                </div>
+              </div>
+            </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <p></p>
+                    
                 </div>
             </div>
         </div>
@@ -79,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-light">
+        <section class="bg-light" style="margin-bottom: 0px;">
             <div class="row justify-content-center">
                 <img src="img/security-login-400-min.png" style="max-width: 20%; height: auto;" class="col-md-6">
                 <div class="col-md-6" style="padding-top: 100px;">
@@ -88,16 +105,16 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div id="pedroville-counter" class="pedroville-counters" style="background-image: url(img/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+        <section style="margin-top: 0px;">
+            <div id="pedroville-counter" class="pedroville-counters" style="background-image: url(img/cover_bg_1.jpg); margin-top: 0px;" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
 				<div class="pedroville-narrow-content">
 					<div class="row">
 					</div>
 					<div class="row wow">
-						<div class="col-md-12 text-center animate-box">
+						<div class="col-md-12 text-center animate-box" style="padding: 50px 10px;">
                             <h3 class="h2 white-txt top-left">Get ready to make more than</h3>
-                            <h2 class=" h1 white-txt text-center"><strong>100,000</strong>+</h2>
+                            <h2 class=" h1 white-txt text-center" style="padding-top: 20px; padding-bottom: 20px;"><strong>100,000</strong>+</h2>
 							<span class="pedroville-counter-label float-right h4 white-txt"> transactions accross Africa.</span>
 						</div>
 						
@@ -109,15 +126,21 @@
             <div class="row justify-content-between">
                 <div class="col-md-4 col-xs-12 col-sm-6 wow fadeInLeft text-center shadow-lg py-5 card" data-wow-delay="900">
                     <h1 class="h3 orange-txt">About US</h1>
-                    <p>WE ARE SCARITEL. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem eum quibusdam minima suscipit hic! Earum eveniet deleniti sint dignissimos reprehenderit natus ducimus laudantium, porro ratione quis voluptatibus, laborum quae.</p>
+                    <p style="text-align: justify;"> Scaripay 
+                    </p>
                 </div>
                 <div class="col-md-4  col-xs-12 col-sm-6 wow fadeInUp text-center shadow-lg py-5 card" data-wow-delay="900">
                     <h1 class="h3 blue-txt">Our Services</h1>
-                    <p>WE ARE SCARITEL. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem eum quibusdam minima suscipit hic! Earum eveniet deleniti sint dignissimos reprehenderit natus ducimus laudantium, porro ratione quis voluptatibus, laborum quae.</p>
+                    <p style="text-align: justify;">Scaripay translates the potential of data to be monitised. We provide comprehensive consulting services, financial services, software engineering together with the key technology acceleration solutions to gear up consumer-oriented services in different industry sectors.
+                        Our professionals harness innovation and deliver an end-to-end experience that includes strategy, architecture, customer experience, service management all within a new fintech ecosystem. 
+                    </p>
                 </div>
                 <div class="col-md-4  col-xs-12 col-sm-6 wow fadeInRight text-center shadow-lg py-5 card" data-wow-delay="900">
                     <h1 class="h3 orange-txt">Financial Inclusion</h1>
-                    <p>WE ARE SCARITEL. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem eum quibusdam minima suscipit hic! Earum eveniet deleniti sint dignissimos reprehenderit natus ducimus laudantium, porro ratione quis voluptatibus, laborum quae.</p>
+                    <p style="text-align: justify;"> We at Scaripay have considered those who have no access to financial services: no checking account, no credit card, no health, property or life insurance, or no safe place for their savings. 
+                        Nearly 2 billion people worldwide would need financial inclusion so they can make most of their resources and take part in their local economies.
+                        Scaripay is here to create a platform for everyone to gain access to financial services, so they can earn more, build assets and involve themselves in their local economies.
+                    </p>
                 </div>
             </div>
         </section>
@@ -138,14 +161,11 @@
         </section>
         <section class="container ready-card wow pulse" data-wow-duration="1500ms">
             <div class="row" >
-                <div class="col-6">
-                    <h3 class="h4 white-txt">GET READY FOR</h3>
-                    <h1 class="h1 orange-txt">SCARIPAY</h1>
-                </div>
-                <div class="col-6">
-                    <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-                    <form action="#" method="POST">
+                <div class="col-12">
+                    <p class="h5" style="color: white; text-align: center;">Subscribe to our mailing list to <br> get the latest updates straight in your inbox.</p>
+                    <form action="#" method="POST" class="subscribeform">
                         <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
                             <input type="text" class="form-control" placeholder="Email Address">
                         </div>
                         <button type="submit" class="btn btn-primary">Subscribe</button>
@@ -157,7 +177,7 @@
     <!--::footer_part start::-->
     <footer class="footer_part">
         <div class="container footer-content mx-auto ">
-            <div class="row justify-content-between">
+            <div class="row justify-content-center">
                 <div class="col-md-4 col-xs-12 col-sm-6">
                     <div class="blue-txt">
                         <h4>Team</h4>
@@ -189,14 +209,14 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-social">
+            <div class="footer-social justify-content-center">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-linkedin"></i></a>
                 <a href="#"><i class="fa fa-whatsapp"></i></a>
             </div>
-            <p class="h5">Madagascar, Nigeria, Ghana.</p>
+            <p class="h5">Madagascar | Nigeria | Ghana</p>
             <P>
                 ScariPay is a property of Scaritel Africa. ScariPay tends to provide financial services across countries where 
                 where licensed to operate and enhancing financial inclusion in these areas.
