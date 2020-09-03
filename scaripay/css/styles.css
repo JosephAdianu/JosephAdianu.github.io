@@ -2,73 +2,227 @@ body {
     font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
-    font-size: 16px; overflow-x: hidden;}
+    font-size: 16px; overflow-x: hidden;
+}
+
 a {
-        text-decoration: none;
-        color: rgb(9, 5, 139);
-        -webkit-transition: 0.5s;
-        transition: 0.5s;}
-header{margin: 0; padding: 0;}
-section{padding-top: 18px; padding-bottom: 18px;}
-.cont{
+    text-decoration: none;
+    color: rgb(9, 5, 139);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+header {
+    margin: 0; padding: 0;
+}
+
+section {
+    padding-top: 18px; 
+    padding-bottom: 18px;
+}
+
+.cont {
     margin: 0 auto;
     max-width: 1310px;
     padding: 0 20px;
-    width: 100%;}
-h1{
-    /* font-family: 'centurygothicbold', 'U8', sans-serif; */
+    width: 100%;
+}
+
+h1 {
     font-family: 'U8-Bold', sans-serif;
 }
-.stores{display: flex; justify-content: space-evenly;}
-.header-top{background-color: rgb(9, 5, 139);background-size: cover; color: white; padding: 8px 0px;}
-.top-sub-btn{border: 1px solid rgb(220, 92, 6);color: rgb(220, 92, 6);border-radius: 5px;
-    padding: 8px 15px !important;}
-.top-sub-btn:hover{background-color: rgb(220, 92, 6); color: white;}
-.blue-txt{color: #083E9E !important;}
-.orange-txt{color: rgb(220, 92, 6) !important;}
-.white-txt{color: white !important;}
-.card{background-image: url(../img/card.jpg); background-position: center; background-size: cover; border-radius: 5px;justify-content: space-around;}
-.ready-card{background-image: url(../img/ready-card.png); background-position: center; background-size: cover; border-radius: 5px; margin: 50px auto; padding: 20px 10px;}
-.footer_part{background-image: url(../img/footer-img.png); background-position: center; background-size: cover;}
-.footer-content{padding: 30px 20px;}
-#pedroville-counter {position: relative; clear: both; margin-bottom: 5em; }
-.pedroville-counters {padding: 3em 0;background-size: cover;background-attachment: fixed;background-position: center center; }
+
+.stores {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.header-top {
+    background-color: rgb(9, 5, 139);
+    background-size: cover; 
+    color: white; 
+    padding: 8px 0px;
+}
+
+.top-sub-btn {
+    border: 1px solid rgb(220, 92, 6);
+    color: rgb(220, 92, 6);
+    border-radius: 5px;
+    padding: 8px 15px !important;
+}
+
+.top-sub-btn:hover {
+    background-color: rgb(220, 92, 6); 
+    color: white;
+}
+
+.blue-txt {
+    color: #083E9E !important;
+}
+
+.orange-txt {
+    color: rgb(220, 92, 6) !important;
+}
+
+.white-txt {
+    color: white !important;
+} 
+
+.card {
+    background-image: url(../img/card.jpg); 
+    background-position: center; 
+    background-size: cover; 
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+.ready-card {
+    background-image: url(../img/ready-card.png); 
+    background-position: center; 
+    background-size: cover; 
+    border-radius: 5px; 
+    margin: 50px auto; 
+    padding: 20px 10px;
+}
+
+.footer_part {
+    background-image: url(../img/footer-img.png); 
+    background-position: center; 
+    background-size: cover;
+} 
+
+.footer-content {
+    padding: 30px 20px;
+}
+
+#pedroville-counter {
+    position: relative; 
+    clear: both; 
+    margin-bottom: 5em; 
+}
+
+.pedroville-counters {
+    padding: 3em 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; 
+}
+
 .pedroville-narrow-content {
-    padding: 0 2.5em; }
+    padding: 0 2.5em; 
+} 
+
 .subscribeform {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
 }
-    @media screen (max-width: 480px) {
-      .pedroville-narrow-content {
-        padding: 100px 10px; } }
-.pedroville-counter-label {
-            color: rgba(255, 255, 255, 0.7);
-            text-transform: uppercase;
-            font-size: 14px;
-            letter-spacing: 5px;
-            margin-bottom: 2em;
-            display: block; }
-            .pedroville-counter {
-                font-size: 40px;
-                display: block;
-                color: white;
-                font-family: "Quicksand", Arial, sans-serif;
-                width: 100%;
-                font-weight: 700;
-                margin-bottom: .3em; }
-                .overlay {
-                    z-index: 0;
-                    position: absolute;
-                    bottom: 0;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    background: rgba(0, 0, 0, 0.4); }
-                    .top-left{
-                        position: absolute;
-                        top: 0px;
-                        left: 0px;
-                        padding: 0px;
-                    }
+
+/*CSS Styling for mobile devices of maximum width of 480px*/
+
+@media only screen and (max-device-width: 480px) {
+    /*.blue-txt {
+        width: 96%;
+        margin-right: 2%;
+        margin-left: 2%;
+        font-size: 25px;
+    }*/
+    .pedroville-narrow-content {
+        padding: 100px 10px; 
+    } 
+
+    .pedroville-counter-label {
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 5px;
+        margin-bottom: 2em;
+        display: block; 
+    }
+
+    .pedroville-counter {
+        font-size: 40px;
+        display: block;
+        color: white;
+        font-family: "Quicksand", Arial, sans-serif;
+        width: 100%;
+        font-weight: 700;
+        margin-bottom: .3em; 
+    }
+
+    .overlay {
+        z-index: 0;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.4); 
+    }
+
+    .top-left{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 0px;
+    }
+
+    .h6 {
+        width: 96%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .card {
+        margin-bottom: 3%;
+    }
+
+    .orange-txt, .blue-txt {
+        font-size: 20px;
+        margin-top: 2%;
+        text-align: center;
+        font-family: SFProText, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    #bill-ease {
+        font-size: 20px;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    #sub-bill-ease {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .h5 {
+        font-size: 15px;
+        margin-bottom: 3%;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+
+    #bg-light-h1 {
+        font-size: 20px;
+    }
+
+    #bg-light-p {
+        font-size: 13px;
+    }
+
+    .top-left {
+        font-size: 20px;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    .white-txt {
+        margin-bottom: -20px;
+        margin-top: 13%;
+    }
+}
+/*End of CSS Styling for mobile devices of maximum width of 480px*/
+
+      
