@@ -127,6 +127,9 @@ h1 {
         margin-left: 2%;
         font-size: 25px;
     }*/
+    body {
+        width: 480px;
+    }
     .pedroville-narrow-content {
         padding: 100px 10px; 
     } 
