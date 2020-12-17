@@ -1,6 +1,6 @@
 <?php
 
-    $to = "spn8@spondonit.com";
+    $to = "bongobtc@gmail.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $subject = $_REQUEST['subject'];
@@ -15,8 +15,8 @@
 
     $subject = "You have a message from your Bitmap Photography.";
 
-    $logo = 'img/logo.png';
-    $link = '#';
+    $logo = 'img/bongobtc/logo.png';
+    $link = 'bongobtc.com';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
